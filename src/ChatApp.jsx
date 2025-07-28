@@ -36,7 +36,7 @@ const ChatApp = () => {
 
     const makeRequest = async (retry = false) => {
       try {
-        const res = await axios.post('http://localhost:5000/ask', {
+        const res = await axios.post('https://scalo-technologies-assingment-backe.vercel.app/ask', {
           companyName,
           question: userMessage.content,
         });
